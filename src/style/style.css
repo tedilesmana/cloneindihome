@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 1px solid blue;
+}
+
+body{
+	font-size: 14px;
+}
+
+#wrapper{
+	padding-left: 150px;
+	padding-right: 150px;
+	position: relative;
+}
+
+#navbar{
+	background-color: red;
+	width: auto;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	font-weight: bold;
+	width: 100vw;
+	position: absolute;
+	left: 0;
+}
+
+#navbar ul li{
+	list-style: none;
+	float: left;
+	margin-left: 20px;
+}
+
+#navbar .c-left{
+	margin-left: 150px;
+}
+
+#navbar .c-right{
+	margin-right: 150px;
+}
+
+#slider{
+	margin-top: 70px;
+}
+
+#slider .c-top{
+	background-color: red;
+	height: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	margin-top: 30px;
+	border-radius: 10px;
+}
+
+#slider .c-center{
+	height: 300px;
+	margin-top: 20px;
+	display: flex;
+}
+
+#slider .c-center .r-box{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#slider .c-center .r-box img{
+	width: 90%;
+	border-radius: 10px;
+}
+
+#slider .c-bottom{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#slider .c-bottom .list-img ul{
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#slider .c-bottom .list-img ul li{
+	list-style: none;
+	border-radius: 10px;
+}
+
+#chanel{
+	background-color: black;
+	width: 100vw;
+}
+
