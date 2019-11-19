@@ -1,7 +1,6 @@
 *{
 	margin: 0;
 	padding: 0;
-	border: 1px solid blue;
 }
 
 body{
@@ -9,13 +8,14 @@ body{
 }
 
 #wrapper{
-	padding-left: 150px;
-	padding-right: 150px;
+	padding-left: 100px;
+	padding-right: 100px;
 	position: relative;
 }
 
 #navbar{
-	background-color: red;
+	background-color: #ec1e37;
+	z-index: 2;
 	width: auto;
 	height: 60px;
 	display: flex;
@@ -23,9 +23,10 @@ body{
 	align-items: center;
 	color: white;
 	font-weight: bold;
-	width: 100vw;
-	position: absolute;
+	width: 100%;
+	position: fixed;
 	left: 0;
+	top: 0;
 }
 
 #navbar ul li{
@@ -47,19 +48,19 @@ body{
 }
 
 #slider .c-top{
-	background-color: red;
-	height: 50px;
+	background: linear-gradient(135deg, #ea322a 40%, #ac2222 60%);
+	height: 60px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: white;
-	margin-top: 30px;
+	margin-top: 100px;
 	border-radius: 10px;
 }
 
 #slider .c-center{
-	height: 300px;
+	height: 400px;
 	margin-top: 20px;
 	display: flex;
 }
@@ -69,6 +70,7 @@ body{
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-end;
+	width:100%;
 }
 
 #slider .c-center .r-box img{
@@ -87,13 +89,106 @@ body{
 	justify-content: space-between;
 }
 
+#slider .c-bottom .list-img ul img{
+	border-radius: 10px 10px 0 0;
+}
+
 #slider .c-bottom .list-img ul li{
 	list-style: none;
-	border-radius: 10px;
+	border: 1px solid grey;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#slider .c-bottom .list-img .label{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
 }
 
 #chanel{
-	background-color: black;
+	background-color: #121528;
 	width: 100vw;
+	position: relative;
+	left: -150px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
 }
 
+#chanel .c-top{
+	padding-left: 150px;
+	padding-right: 150px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#chanel .c-top ul li{
+	list-style: none;
+	float: left;
+	padding-top: 20px;
+}
+
+#chanel .c-bottom{
+	padding-left: 150px;
+	padding-right: 150px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+#chanel .c-bottom img{
+	border-radius: 10px;
+}
+
+#footer{
+	padding-bottom: 20px
+}
+
+#footer .c-top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+}
+
+#footer .c-top .l-box ul li{
+	float: left;
+	list-style: none;
+	text-align: center;
+	margin-right: 10px;
+}
+
+#footer .c-top .r-box .label{
+	padding-right: 20px;
+}
+
+#footer .c-bottom{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#footer .c-bottom ul li{
+	list-style: none;
+}
+
+#footer .c-bottom .b01{
+	width: 30%;
+}
+
+#footer .c-bottom .b04{
+	background-image: url(../images/s01.png);
+	padding: 20px;
+	border-radius: 15px;
+	width: 30%;
+	height: 200px;
+}
+
+#chat{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
